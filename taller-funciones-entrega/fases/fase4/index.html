@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Taller de funciones</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header>
+    <h1>Taller de funciones</h1>
+    <p>Cinco herramientas hechas con funciones de JavaScript escritas a mano.</p>
+  </header>
+
+  <main>
+    <section aria-labelledby="t-iva">
+      <h2 id="t-iva">IVA y descuentos</h2>
+      <label>Precio (€) <input id="precio" type="text" inputmode="decimal" placeholder="100"></label>
+      <label>IVA (%), vacío = 21 <input id="tipo" type="text" inputmode="decimal" placeholder="21"></label>
+      <label>Descuento (%), vacío = 0 <input id="descuento" type="text" inputmode="decimal" placeholder="0"></label>
+      <button id="btn-iva" type="button">Calcular precio</button>
+      <p id="res-iva" class="resultado" aria-live="polite"></p>
+    </section>
+
+    <section aria-labelledby="t-temp">
+      <h2 id="t-temp">Temperaturas</h2>
+      <label>Valor <input id="grados" type="text" inputmode="decimal" placeholder="100"></label>
+      <div class="fila">
+        <label>De
+          <select id="de"><option value="C">Celsius</option><option value="F">Fahrenheit</option></select>
+        </label>
+        <label>A
+          <select id="a"><option value="F">Fahrenheit</option><option value="C">Celsius</option></select>
+        </label>
+      </div>
+      <button id="btn-temp" type="button">Convertir</button>
+      <p id="res-temp" class="resultado" aria-live="polite"></p>
+    </section>
+
+    <section aria-labelledby="t-clave">
+      <h2 id="t-clave">Validador de contraseñas</h2>
+      <label>Contraseña <input id="clave" type="text" autocomplete="off" placeholder="Abcdefg1"></label>
+      <button id="btn-clave" type="button">Evaluar contraseña</button>
+      <p id="res-clave" class="resultado" aria-live="polite"></p>
+    </section>
+
+    <section aria-labelledby="t-gen">
+      <h2 id="t-gen">Generador de contraseñas</h2>
+      <label>Longitud (6 a 30) <input id="longitud" type="text" inputmode="numeric" value="12"></label>
+      <div class="fila">
+        <label class="check"><input id="mayusculas" type="checkbox" checked> Mayúsculas</label>
+        <label class="check"><input id="numeros" type="checkbox" checked> Números</label>
+      </div>
+      <button id="btn-gen" type="button">Generar contraseña</button>
+      <p id="res-gen" class="resultado" aria-live="polite"></p>
+    </section>
+
+    <section aria-labelledby="t-pal">
+      <h2 id="t-pal">Contador de palabras</h2>
+      <label>Texto <textarea id="texto" rows="4" placeholder="Pega o escribe un texto"></textarea></label>
+      <button id="btn-palabras" type="button">Contar</button>
+      <p id="res-palabras" class="resultado" aria-live="polite"></p>
+    </section>
+
+  </main>
+
+  <script src="funciones.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
