@@ -2,8 +2,7 @@
 
 Página con cinco herramientas pequeñas, todas hechas con funciones de JavaScript escritas a mano. Práctica 1 de Desarrollo Web en Entorno Cliente (2º DAW, IES Juan García Valdemora).
 
-- **Página publicada:** https://TU_USUARIO.github.io/taller-funciones/
-- **Autor:** TU_NOMBRE
+- **Autor:** Darius Joanito Marinescu
 
 ## Herramientas
 
